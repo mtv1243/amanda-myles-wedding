@@ -1,4 +1,47 @@
 body {
-  background-color: #A6005E;
+  background-color: #66003A;
   color: #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+main {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+header {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+h1 {
+    font-weight: 300;
+}
+
+span.and {
+  font-size: .4em;
+  margin-top: 2em;
+}
+
+nav {
+  margin: 0 auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight:100;
+}
+
+.hero-img-wrapper {
+  height: 80vh;
+  width: 100%;
+  background-image: url('./images/Proposal Cedar Island Myles.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  outline: 6px #fff solid;
+  outline-offset: -6px;
 }
