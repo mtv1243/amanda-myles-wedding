@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,600|Source+Serif+Pro&display=swap');
+
 body {
   background-color: #66003A;
-  color: #fff;
-  font-family: 'Roboto', sans-serif;
+  color: #F0CE78;
+  font-family: 'Source Serif Pro', serif;
 }
 
 main {
@@ -19,15 +21,20 @@ header {
 }
 
 h1 {
-    font-weight: 300;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin: 50px 0;
 }
 
 span.and {
+    line-height: 3;
   font-size: .4em;
-  margin-top: 2em;
+  margin: 2em 0;
 }
 
 nav {
+  font-family: 'Barlow Semi Condensed', sans-serif;
   margin: 0 auto;
   width: 70%;
   display: flex;
@@ -37,6 +44,7 @@ nav {
 }
 
 .hero-img-wrapper {
+  margin-top: 2em;
   height: 80vh;
   width: 100%;
   background-image: url('./images/Proposal Cedar Island Myles.png');
@@ -44,4 +52,140 @@ nav {
   background-size: cover;
   outline: 6px #fff solid;
   outline-offset: -6px;
+}
+
+/*======================
+    DATE Styles
+======================*/
+
+.date-wrapper {
+  margin: 50px auto;
+}
+
+.date-wrapper h2 {
+  text-align: center;
+}
+
+h2.join-us {
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+h2.date {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+/*====================
+    Gold Lace
+====================*/
+
+.gold-lace-wrapper {
+  height: 30vh;
+  width: 100%;
+  background-image: url('./images/GoldLaceTexture3-rotate.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+/*=====================
+    Perfmormance styles
+======================*/
+
+.performance-wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+h3.performance-headline {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 2rem;
+}
+
+p.performance {
+  text-align: justify;
+}
+
+/*=====================
+    FORM STYLES
+=====================*/
+
+#mc_embed_signup{
+  clear: left;
+  font: 14px Helvetica,Arial,sans-serif;
+  color: #F0CE78;
+  display: flex;
+  justify-content: center;
+}
+
+#mc_embed_signup_scroll {
+  width: 40vw;
+}
+
+input {
+  background-color: #F0CE78;
+  border: 1px solid #000;
+}
+
+input[type=radio] {
+  opacity: 0;
+  position: fixed;
+  width: 0;
+}
+
+#mc_embed_signup .mc-field-group.input-group label {
+  display: inline-block;
+  background-color: #F0CE78;
+  padding: 10px 20px;
+  color: #66003A;
+  font-family: sans-serif, Arial;
+  font-size: 16px;
+  border: 2px solid #B3873B;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 400;
+  transition: font-weight .5s;
+}
+
+#mc_embed_signup .mc-field-group.input-group input[type="radio"]:checked + label {
+    /* background-color:#bfb; */
+    background-color: #FFEBB8;
+    border-color: #F0CE78;
+}
+
+#mc_embed_signup .mc-field-group.input-group label:hover {
+  font-weight: 700;
+}
+
+/*=================
+    LODGING styles
+===================*/
+.lodging-wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+h3.lodging-headline {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 400;
+  text-align: center;
+  font-size: 2rem;
+}
+
+iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+/*===================
+    Footer Styles
+====================*/
+
+footer {
+  margin: 100px auto;
+  text-align: center;
 }
