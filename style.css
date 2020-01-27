@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,600|Source+Serif+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:200,400,600|Source+Serif+Pro&display=swap');
 
 @import url('https://fonts.googleapis.com/css?family=Barlow:200,400,600&display=swap');
 
@@ -23,18 +23,23 @@ header {
   text-align: center;
 }
 
+.name-wrapper {
+  background-image: url('./images/gold-bars.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+}
+
 h1 {
   font-family: 'Barlow', sans-serif;
   font-weight: 400;
   font-size: 3.5rem;
-  /* margin: 50px 0; */
-  /* line-height: 1; */
   letter-spacing: 8px;
   margin: 0;
 }
 
 h1.and {
-  /* line-height: 1; */
   display: block;
   font-weight: 700;
   font-size: 1em;
@@ -79,6 +84,10 @@ nav .item:hover {
     DATE Styles
 ======================*/
 
+h2, h3 {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
 .date-wrapper {
   margin: 50px auto;
 }
@@ -87,10 +96,10 @@ nav .item:hover {
   text-align: center;
 }
 
-h2.join-us {
+/* h2.join-us {
   font-weight: 400;
   font-size: 1.5rem;
-}
+} */
 
 h2.date {
   font-family: 'Barlow Semi Condensed', sans-serif;
@@ -98,8 +107,8 @@ h2.date {
   font-size: 2.5rem;
 }
 
-h2.time, h2.reception {
-  font-weight: 400;
+h2.time, h2.reception, h2.join-us {
+  font-weight: 200;
 }
 
 /*====================
