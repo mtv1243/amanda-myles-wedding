@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,600|Source+Serif+Pro&display=swap');
 
+@import url('https://fonts.googleapis.com/css?family=Barlow:200,400,600&display=swap');
+
 body {
   background-color: #66003A;
   color: #F0CE78;
@@ -13,6 +15,7 @@ main {
 
 header {
   margin: 0 auto;
+  padding-top: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,26 +24,44 @@ header {
 }
 
 h1 {
-  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-family: 'Barlow', sans-serif;
   font-weight: 400;
-  font-size: 2.5rem;
-  margin: 50px 0;
+  font-size: 3.5rem;
+  /* margin: 50px 0; */
+  /* line-height: 1; */
+  letter-spacing: 8px;
+  margin: 0;
 }
 
-span.and {
-    line-height: 3;
-  font-size: .4em;
-  margin: 2em 0;
+h1.and {
+  /* line-height: 1; */
+  display: block;
+  font-weight: 700;
+  font-size: 1em;
+  margin: 30px 0;
+  padding: 0;
 }
 
 nav {
   font-family: 'Barlow Semi Condensed', sans-serif;
-  margin: 0 auto;
+  margin-top: 60px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
   width: 70%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight:100;
+}
+
+nav .item {
+  cursor: pointer;
+  font-weight: 400;
+}
+
+nav .item:hover {
+  font-weight: 700;
 }
 
 .hero-img-wrapper {
@@ -75,6 +96,10 @@ h2.date {
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-weight: 400;
   font-size: 2.5rem;
+}
+
+h2.time, h2.reception {
+  font-weight: 400;
 }
 
 /*====================
@@ -148,7 +173,7 @@ input[type=radio] {
   border-radius: 4px;
   cursor: pointer;
   font-weight: 400;
-  transition: font-weight .5s;
+  /* transition: font-weight .5s; */
 }
 
 #mc_embed_signup .mc-field-group.input-group input[type="radio"]:checked + label {
@@ -157,8 +182,45 @@ input[type=radio] {
     border-color: #F0CE78;
 }
 
+#mc_embed_signup .mc-field-group.input-group input[type="radio"]:focus + label {
+    border: 2px dashed #F0CE78;
+}
+
 #mc_embed_signup .mc-field-group.input-group label:hover {
-  font-weight: 700;
+  background-color: #FFE6A6;
+}
+
+.yes, .yes-joy, .no, .no-regret {
+  text-align: center;
+  width: 200px;
+}
+
+#mc-embedded-subscribe.button {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  background-color: #F0CE78;
+  border: none;
+  padding: 15px 0;
+  color: #66003A;
+  border-radius: 5px;
+  box-shadow: 0 6px #B3873B;
+  position: relative;
+  cursor: pointer;
+  height: auto;
+  line-height: normal;
+  transition: all .2s;
+}
+
+#mc-embedded-subscribe.button:hover {
+  box-shadow: 0 4px #B3873B;
+  background-color: #F0CE78;
+  top: 2px;
+}
+
+#mc-embedded-subscribe.button:active {
+  top: 6px;
+  box-shadow: 0 0;
 }
 
 /*=================
@@ -166,7 +228,7 @@ input[type=radio] {
 ===================*/
 .lodging-wrapper {
   width: 70%;
-  margin: 0 auto;
+  margin: 100px auto;
 }
 
 h3.lodging-headline {
@@ -174,6 +236,11 @@ h3.lodging-headline {
   font-weight: 400;
   text-align: center;
   font-size: 2rem;
+}
+
+.lodging-address {
+  font-weight: 700;
+  text-align: center;
 }
 
 iframe {
