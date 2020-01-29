@@ -69,6 +69,16 @@ nav .item:hover {
   font-weight: 700;
 }
 
+/* nav .item01 {
+  border-left: 1px solid;
+  padding-left: 50px;
+}
+
+nav .item04 {
+  border-right: 1px solid;
+  padding-right: 50px;
+} */
+
 .hero-img-wrapper {
   margin-top: 2em;
   height: 80vh;
@@ -264,4 +274,42 @@ iframe {
 footer {
   margin: 100px auto;
   text-align: center;
+}
+
+@media screen and (max-width: 426px) {
+  main {
+    width: 90vw;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    letter-spacing: 5px;
+  }
+
+  h1.and {
+    font-size: 1em;
+    margin: 30px 0;
+    padding: 0;
+  }
+
+  .name-wrapper {
+    background-size: 155%;
+  }
+
+  .performance-wrapper {
+    width: 100%;
+  }
+
+  #mc_embed_signup form {
+    width: 100%;
+  }
+
+  #mc_embed_signup_scroll {
+    width: auto;
+  }
+
+  #mc_embed_signup_scroll h2 {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+  }
+
 }
