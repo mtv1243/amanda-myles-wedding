@@ -1,4 +1,35 @@
 /*===============
+    nav bar
+===============*/
+
+$(".item01").click(()=>{
+  $("html").animate(
+    {
+      scrollTop: $('.date-wrapper').offset().top
+    },
+    "slow"
+  );
+});
+
+$(".item02").click(()=>{
+  $("html").animate(
+    {
+      scrollTop: $('#mc_embed_signup').offset().top
+    },
+    "slow"
+  );
+});
+
+$(".item03").click(()=>{
+  $("html").animate(
+    {
+      scrollTop: $('.lodging-wrapper').offset().top
+    },
+    "slow"
+  );
+});
+
+/*===============
     countDown
 ================*/
 
