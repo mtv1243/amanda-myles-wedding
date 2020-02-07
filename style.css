@@ -298,7 +298,7 @@ iframe {
   .resp-container {
     position: relative;
     overflow: hidden;
-    padding-top: 100%;
+    padding-top: 50%;
     outline-style: solid;
     outline-color: #F0CE78;
     outline-width: 4px;
