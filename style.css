@@ -324,6 +324,27 @@ footer {
   text-align: center;
 }
 
+.scroll-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 20px;
+  right: 40px;
+  font-size: 25px;
+  background-color: rgba(150,150,150,.3);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+}
+
+.scroll-top > i {
+  color: rgba(240, 206, 120, 0.5);
+}
+
 @media screen and (max-width: 426px) {
 
   body {

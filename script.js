@@ -29,6 +29,15 @@ $(".item03").click(()=>{
   );
 });
 
+$(".scroll-top").click(()=>{
+  $("html").animate(
+    {
+      scrollTop: $('header').offset().top
+    },
+    "slow"
+  );
+});
+
 /*===============
     countDown
 ================*/
