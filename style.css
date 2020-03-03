@@ -394,6 +394,10 @@ footer {
     font-family: 'Barlow Semi Condensed', sans-serif;
   }
 
+  #mc-embedded-subscribe.button {
+    width: 65%;
+  }
+
   .lodging-wrapper {
     width: 100%;
   }
