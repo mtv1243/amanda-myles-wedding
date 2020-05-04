@@ -86,7 +86,7 @@ nav .item:hover {
 ====================*/
 
 .gold-lace-wrapper {
-  margin-top: 10%;
+  margin-top: 10vh;
   height: 30vh;
   width: 100%;
   background-image: url('./images/GoldLaceTexture3-rotate.png');
