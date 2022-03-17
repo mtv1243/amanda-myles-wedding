@@ -2,10 +2,18 @@
 
 @import url('https://fonts.googleapis.com/css?family=Barlow:200,400,600&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Ballet&display=swap');
+
+a {
+  color: inherit;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #520022;
   color: #F0CE78;
   font-family: 'Source Serif Pro', serif;
+  overflow-x: hidden;
 }
 
 main {
@@ -47,31 +55,49 @@ h1.and {
   padding: 0;
 }
 
-nav {
+nav .nav-wrapper, nav .nav-wrapper-mobile {
   font-family: 'Barlow Semi Condensed', sans-serif;
   margin-top: 60px;
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
+  background-color: #5c1432;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-weight:100;
 }
 
-nav .item {
+nav .nav-wrapper-mobile {
+  display: none;
+}
+
+nav .menu-text {
+  display: none;
+}
+
+.item {
   cursor: pointer;
+  flex-grow: 1;
+  width: 12rem;
+  padding: .5rem 0;
   font-weight: 300;
   font-size: 20px;
 }
 
+.item01, .item02, .item03 {
+  border-right: 1px solid #77541f;
+}
+
 nav .item:hover {
   font-weight: 700;
+  background-color: rgba(150, 150, 150, .2);
 }
 
 .hero-img-wrapper {
   margin-top: 2em;
+  margin-bottom: 3rem;
   height: 80vh;
   width: 100%;
   background-image: url('./images/Proposal Cedar Island Myles.png');
@@ -86,45 +112,142 @@ nav .item:hover {
 ====================*/
 
 .gold-lace-wrapper {
-  margin-top: 10vh;
+  margin-top: 1rem;
   height: 30vh;
   width: 100%;
   background-image: url('./images/GoldLaceTexture3-rotate.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
+  transform: rotate(0.5turn);
+}
+
+.gold-lace-02 {
+  transform: rotate(1turn);
 }
 
 /*======================
     DATE Styles
 ======================*/
 
-h2, h3 {
+h2, h3, p {
   font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 .date-wrapper {
-  margin: 50px auto;
+  margin: 0 auto;
   width: 50%;
 }
 
 .date-wrapper h2 {
   text-align: center;
+  margin: 0;
 }
 
 h2.date {
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
   font-weight: 400;
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-family: 'Ballet', cursive;
+  /* margin-bottom: 7rem; */
 }
 
-h2.time, h2.reception, h2.join-us {
+h2.ceremony-time, h2.reception, h2.join-us {
   font-weight: 200;
 }
 
-span.bold {
-  font-weight: 400;
+/*======================
+    CARD Styles
+======================*/
+
+.card-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
 }
 
+.card-image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 400px;
+  height: 250px;
+  /* padding: 10px;
+  outline: 2px #fff solid;
+  outline-offset: -2px; */
+}
+
+.card-text {
+  font-size: 20px;
+}
+
+/*======================
+    CEREMONY Styles
+======================*/
+
+.ceremony-wrapper {
+  flex-direction: row;
+  margin-bottom: 7rem;
+}
+
+.ceremony-image {
+  background-image: url("./images/CVHR-logo.png");
+  
+}
+
+.ceremony-link {
+  font-weight: 300;
+}
+
+/*======================
+    RECEPTION Styles
+======================*/
+
+.reception-image {
+  background-image: url("./images/zehnders-logo.png");
+  background-color: #e6e6e6;
+}
+
+
+
+.reception-details, .reception-time {
+  font-weight: 300;
+}
+
+/*======================
+    FILIGREE Styles
+======================*/
+
+.filigree-01 {
+  width: 10rem;
+  display: block;
+  margin: 4rem auto;
+}
+
+/*=====================
+    LODGING STYLES
+=====================*/
+
+.lodging-wrapper {
+  margin-top: 3rem;
+}
+
+.hotel-heading {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.hotel-information {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+span.bold {
+  font-weight: 700;
+}
 
 /*=====================
     FORM STYLES
@@ -141,20 +264,32 @@ span.bold {
   margin: 0 13px;
 }
 
-#mc_embed_signup .size1of2 {
-
-}
-
 #mc_embed_signup{
   clear: left;
   font: 14px Helvetica,Arial,sans-serif;
   color: #F0CE78;
+  background-color: #520022;
   display: flex;
   justify-content: center;
 }
 
+.input-group > ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#mc_embed_signup .mc-field-group.input-group ul li {
+  margin-right: 1rem;
+}
+
 #mc_embed_signup_scroll {
-  width: 40vw;
+  width: 50vw;
+}
+
+#mc_embed_signup_scroll > h2 {
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 input {
@@ -166,6 +301,10 @@ input[type=radio] {
   opacity: 0;
   position: fixed;
   width: 0;
+}
+
+#mc_embed_signup_scroll > div.optionalParent > div {
+  display: block;
 }
 
 #mc_embed_signup .mc-field-group.input-group label {
@@ -229,6 +368,19 @@ input[type=radio] {
   box-shadow: 0 0;
 }
 
+.brandingLogo {
+  display: none;
+}
+
+/*===================
+    Footer Styles
+====================*/
+
+.thank-you {
+  text-align: center;
+  margin-top: 3rem;
+}
+
 /*===================
     Footer Styles
 ====================*/
@@ -255,6 +407,10 @@ footer {
   cursor: pointer;
 }
 
+.scroll-top:hover {
+  background-color: rgba(150,150,150,.7);
+}
+
 .scroll-top > i {
   color: rgba(240, 206, 120, 0.5);
 }
@@ -279,6 +435,53 @@ footer {
     width: 90%;
   }
 
+  .hero-img-wrapper {
+    height: 55vh;
+  }
+
+  /*============================
+    NAV styles
+=============================*/
+
+nav {
+  width: 70%;
+  margin-top: 2rem;
+  flex-direction: column;
+  background-color: #5c1432;
+}
+
+nav .nav-wrapper {
+  display: none;
+}
+
+  nav .menu-text {
+    font-size:  20px;
+    margin: 0;
+    display:block;
+    width: 100%;
+    cursor: pointer;
+    padding: 0.5rem 0;
+    border: 1px solid #77541f;
+  }
+
+  nav .nav-wrapper-mobile {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+
+  .item {
+    display: block;
+    width: 100%;
+  }
+
+  .item01, .item02, .item03 {
+    border: none;
+    border-bottom: 1px solid #77541f;
+  }
+
   h1 {
     font-size: 2.5rem;
     letter-spacing: 5px;
@@ -290,16 +493,32 @@ footer {
     padding: 0;
   }
 
+  h2.date {
+    line-height: 4rem;
+    margin: 0;
+  }
+
+  .gold-lace-wrapper {
+    height: 200px;
+    margin: 0;
+  }
+
+  .card-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card-image {
+    width: 100%;
+  }
+
   .name-wrapper {
     background-size: 155%;
   }
 
   .date-wrapper {
     width: 100%;
-  }
-
-  .gold-lace-wrapper {
-    height: 50vh;
+    margin: 1rem 0;
   }
 
   #mc_embed_signup form {
