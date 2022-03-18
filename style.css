@@ -387,6 +387,7 @@ input[type=radio] {
 
 footer {
   margin: 100px auto;
+  width: 90%;
   text-align: center;
 }
 
@@ -523,6 +524,7 @@ nav .nav-wrapper {
 
   #mc_embed_signup form {
     width: 100%;
+    padding: 0;
   }
 
   #mc_embed_signup_scroll {
