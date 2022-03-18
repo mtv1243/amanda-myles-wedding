@@ -483,6 +483,10 @@ nav .nav-wrapper {
     border-bottom: 1px solid #77541f;
   }
 
+/*============================
+    General styles
+=============================*/
+
   h1 {
     font-size: 2.5rem;
     letter-spacing: 5px;
@@ -520,6 +524,10 @@ nav .nav-wrapper {
   .date-wrapper {
     width: 100%;
     margin: 1rem 0;
+  }
+
+  .hotel-details {
+    font-size: 18px;
   }
 
   #mc_embed_signup form {
