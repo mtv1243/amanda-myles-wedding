@@ -10,7 +10,7 @@ a {
 }
 
 body {
-  background-color: #520022;
+  background-color: #3f1318;
   color: #F0CE78;
   font-family: 'Source Serif Pro', serif;
   overflow-x: hidden;
@@ -61,7 +61,7 @@ nav .nav-wrapper, nav .nav-wrapper-mobile {
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
-  background-color: #5c1432;
+  background-color: #5a1d24;
   width: 90%;
   display: flex;
   justify-content: space-between;
@@ -250,8 +250,28 @@ span.bold {
 }
 
 /*=====================
+    RSVP STYLES
+=====================*/
+.covid-details {
+  font-size: 24px;
+}
+
+.covid-thanks {
+  font-size: 2rem;
+  font-family: 'Ballet', cursive;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/*=====================
     FORM STYLES
 =====================*/
+
+.rsvp {
+  font-size: 2.5rem;
+  text-align: center;
+}
 
 /*FLEX STYLES*/
 .name-flex, .contact-flex {
@@ -268,7 +288,7 @@ span.bold {
   clear: left;
   font: 14px Helvetica,Arial,sans-serif;
   color: #F0CE78;
-  background-color: #520022;
+  background-color: #3f1318;
   display: flex;
   justify-content: center;
 }
