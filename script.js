@@ -48,6 +48,15 @@ $(".item04").click(()=>{
   );
 });
 
+$(".item05").click(()=>{
+  $("html").animate(
+    {
+      scrollTop: $('.registry').offset().top-200
+    },
+    "slow"
+  );
+});
+
 $(".scroll-top").click(()=>{
   $("html").animate(
     {

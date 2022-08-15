@@ -86,7 +86,7 @@ nav .menu-text {
   font-size: 20px;
 }
 
-.item01, .item02, .item03 {
+.item01, .item02, .item03, .item04 {
   border-right: 1px solid #77541f;
 }
 
@@ -391,6 +391,38 @@ input[type=radio] {
 .brandingLogo {
   display: none;
 }
+
+
+/*===================
+    Registry Styles
+====================*/
+.registry-heading {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.registry-link {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+    text-decoration: none;
+    display: block;
+    width: 14rem;
+    margin: 4rem auto;
+    padding: 2rem 3rem;
+    background-color: #F0CE78;
+    border: 1px solid;
+    border-radius: 1rem;
+}
+
+.registry-link-text {
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  margin: 0;
+  height: 100%;
+  color: #66003A;
+}
+
 
 /*===================
     Footer Styles
